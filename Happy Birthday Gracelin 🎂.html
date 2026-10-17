@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Gracelin 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,500&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#efe3ff;--bg2:#c9a8f5;--ink:#2a1450;--soft:#5a3a8f;--p1:#7c4dcc;--p2:#a67ce8;--p3:#d9c2ff;--gold:#d9a521;--card:rgba(255,255,255,.7);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2a1450;--bg2:#5a2fa0;--ink:#f7f0ff;--soft:#d9c2ff;--gold:#f2cf7a;--card:rgba(30,12,60,.6)}}
+:root[data-theme="dark"]{--bg1:#2a1450;--bg2:#5a2fa0;--ink:#f7f0ff;--soft:#d9c2ff;--gold:#f2cf7a;--card:rgba(30,12,60,.6)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(170deg,var(--bg1),var(--bg2));color:var(--ink);font-family:Quicksand,system-ui,sans-serif;text-align:center;overflow-x:hidden}
+main{width:min(92vw,480px);margin:0 auto;padding:26px 6px 40px}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,9vw,3rem);line-height:1.1;margin:.1em 0 .2em}
+.sub{color:var(--soft);margin:0 0 6px;min-height:1.5em}
+.cake{position:relative;width:240px;height:230px;margin:24px auto 10px;cursor:pointer}
+.plate{position:absolute;bottom:0;left:-10px;right:-10px;height:16px;background:var(--p3);border-radius:50%;box-shadow:0 8px 18px rgba(42,20,80,.3)}
+.tier{position:absolute;left:50%;transform:translateX(-50%);background:linear-gradient(var(--p2),var(--p1));border-radius:14px 14px 10px 10px}
+.t1{bottom:8px;width:240px;height:90px}
+.t2{bottom:98px;width:170px;height:70px}
+.tier:before{content:"";position:absolute;top:0;left:0;right:0;height:26px;background:#fff;border-radius:14px 14px 40% 40%/14px 14px 100% 100%;opacity:.92}
+.tier i{position:absolute;bottom:14px;width:10px;height:10px;border-radius:50%;background:var(--gold)}
+.candles{position:absolute;bottom:166px;left:50%;transform:translateX(-50%);display:flex;gap:22px}
+.c{position:relative;width:9px;height:42px;background:repeating-linear-gradient(135deg,#fff 0 6px,var(--p3) 6px 12px);border-radius:3px}
+.f{position:absolute;top:-22px;left:-3px;width:15px;height:22px;background:radial-gradient(circle at 50% 70%,#fff6c4,#ffb62e 60%,#ff7a18);border-radius:50% 50% 50% 50%/65% 65% 35% 35%;transform-origin:50% 100%;opacity:0;transform:scale(0);transition:opacity .3s,transform .3s}
+.lit .f{opacity:1;transform:scale(1);animation:fl .5s ease-in-out infinite alternate}
+.lit .c:nth-child(2) .f{animation-delay:.15s}.lit .c:nth-child(3) .f{animation-delay:.3s}
+@keyframes fl{to{transform:scale(.88,1.1) rotate(4deg)}}
+.glow{position:absolute;inset:-30px -40px 40px;background:radial-gradient(circle at 50% 25%,rgba(255,200,80,.5),transparent 55%);opacity:0;transition:opacity .5s;pointer-events:none}
+.lit .glow{opacity:1}
+button{font:700 1rem Quicksand,system-ui,sans-serif;color:#2a1450;background:linear-gradient(135deg,#f6dc93,#e5b955);border:0;border-radius:999px;padding:14px 30px;cursor:pointer;box-shadow:0 8px 22px rgba(124,77,204,.45)}
+button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.vbox{display:none;margin-top:26px}
+.on .vbox{display:block;animation:rise 1s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.paper{background:var(--card);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--gold);border-radius:22px;padding:24px 20px;min-height:210px;display:flex;flex-direction:column;justify-content:center;transition:opacity .25s}
+.v{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(1.2rem,4.8vw,1.55rem);line-height:1.5;margin:0 0 10px}
+.r{color:var(--p1);font-weight:700;margin:0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .r{color:var(--gold)}}
+.dots{display:flex;gap:8px;justify-content:center;margin:16px 0}
+.dots b{width:9px;height:9px;border-radius:50%;background:var(--p3);opacity:.5}
+.dots b.a{background:var(--gold);opacity:1}
+.sign{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:700;margin-top:22px}
+.bit{position:fixed;top:-20px;pointer-events:none;animation:fall linear forwards;z-index:9}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+.wish{display:none;margin:0 auto 16px;width:min(100%,360px)}
+.wish input{width:100%;font:500 1rem Quicksand,system-ui,sans-serif;padding:13px 16px;border-radius:14px;border:2px solid var(--p2);background:var(--card);color:var(--ink)}
+.wish input::placeholder{color:var(--soft);opacity:.8}
+.wish input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wnote{color:var(--soft);font-style:italic;margin:20px 0 0}
+.env{position:relative;width:200px;height:130px;margin:26px auto 0;cursor:pointer;background:linear-gradient(var(--p2),var(--p1));border-radius:8px;box-shadow:0 10px 24px rgba(42,20,80,.35);display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px;font-size:1.7rem}
+.env:before{content:"";position:absolute;top:0;left:0;border-left:100px solid transparent;border-right:100px solid transparent;border-top:72px solid var(--p3);transform-origin:top;transition:transform .6s}
+.env.open:before{transform:rotateX(180deg)}
+.env:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.envhint{color:var(--soft);margin:10px 0 0}
+.letter{display:none;margin-top:18px;text-align:left;background:#fffaf0;color:#3a2a4d;border-radius:8px 8px 20px 20px;border-top:5px solid var(--gold);padding:24px 22px;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;line-height:1.7;box-shadow:0 14px 36px rgba(42,20,80,.35)}
+.letter.show{display:block;animation:rise 1s ease both}
+.letter p{margin:0 0 12px}
+.letter .to{font-weight:700;font-size:1.4rem}
+@media (prefers-reduced-motion:reduce){.lit .f,.bit{animation:none}}
+</style>
+</head>
+<body>
+<main id="app">
+  <h1>Happy Birthday, Gracelin! 💜</h1>
+  <p class="sub" id="sub">Tap the cake to light the candles</p>
+  <div class="cake" id="cake" role="button" tabindex="0" aria-label="Birthday cake">
+    <div class="glow"></div>
+    <div class="candles"><div class="c"><div class="f"></div></div><div class="c"><div class="f"></div></div><div class="c"><div class="f"></div></div></div>
+    <div class="tier t2"><i style="left:22px"></i><i style="left:80px"></i><i style="right:22px"></i></div>
+    <div class="tier t1"><i style="left:30px"></i><i style="left:100px"></i><i style="left:170px"></i></div>
+    <div class="plate"></div>
+  </div>
+  <div class="wish" id="wishBox"><input id="wish" type="text" maxlength="80" placeholder="Type your birthday wish here…" aria-label="Your birthday wish"></div>
+  <button id="btn">Light the candles 🕯️</button>
+  <section class="vbox">
+    <div class="paper" id="paper" aria-live="polite">
+      <p class="v" id="vt"></p><p class="r" id="vr"></p>
+    </div>
+    <div class="dots" id="dots"></div>
+    <button id="next">Next verse 📖</button>
+    <p class="wnote" id="wnote"></p>
+    <div class="env" id="env" role="button" tabindex="0" aria-label="Open your gift letter">💌</div>
+    <p class="envhint" id="envhint">Tap the envelope to open your gift letter</p>
+    <div class="letter" id="letter">
+      <p class="to">Dear Gracelin,</p>
+      <p>Happy Birthday, my lovable friend! 💜</p>
+      <p>You are one of the greatest blessings God has given me. Your love for Jesus, the way you read your Bible and pray, and your kind heart inspire me every single day.</p>
+      <p>Thank you for always being there, for your smile, and for your prayers. I pray this new year brings you peace, good health, joy, and every desire of your heart.</p>
+      <p>God made you wonderful, and I’m so glad He put you in my life. 🎂</p>
+      <p>With all my love,<br>your best friend 🤍</p>
+    </div>
+    <p class="sign">Love you always, your best friend 🤍</p>
+  </section>
+</main>
+<script>
+(function(){
+  var V=[
+    ["I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works.","Psalm 139:14"],
+    ["The Lord bless thee, and keep thee: the Lord make his face shine upon thee, and be gracious unto thee.","Numbers 6:24–25"],
+    ["Delight thyself also in the Lord; and he shall give thee the desires of thine heart.","Psalm 37:4"],
+    ["For I know the thoughts that I think toward you, saith the Lord, thoughts of peace, and not of evil, to give you an expected end.","Jeremiah 29:11"],
+    ["Trust in the Lord with all thine heart; and lean not unto thine own understanding.","Proverbs 3:5"]
+  ];
+  var app=document.getElementById('app'),sub=document.getElementById('sub'),btn=document.getElementById('btn'),cake=document.getElementById('cake'),
+      paper=document.getElementById('paper'),vt=document.getElementById('vt'),vr=document.getElementById('vr'),dots=document.getElementById('dots'),
+      i=0,lit=false;
+  V.forEach(function(){dots.appendChild(document.createElement('b'))});
+  function show(n){
+    paper.style.opacity=0;
+    setTimeout(function(){
+      i=n;vt.textContent='“'+V[i][0]+'”';vr.textContent=V[i][1];
+      [].forEach.call(dots.children,function(d,k){d.className=k===i?'a':''});
+      paper.style.opacity=1;
+    },220);
+  }
+  function confetti(){
+    var c=['#a67ce8','#f2cf7a','#ffffff','#d9c2ff','#ff9ec7','#7c4dcc'];
+    for(var k=0;k<70;k++){
+      var s=document.createElement('span');s.className='bit';
+      s.style.left=Math.random()*100+'vw';
+      s.style.width=(6+Math.random()*7)+'px';s.style.height=(10+Math.random()*8)+'px';
+      s.style.background=c[k%c.length];s.style.borderRadius=k%3?'2px':'50%';
+      s.style.animationDuration=(2.5+Math.random()*2.5)+'s';s.style.animationDelay=Math.random()*.8+'s';
+      document.body.appendChild(s);setTimeout(function(e){e.remove()},6500,s);
+    }
+  }
+  function act(){
+    if(!lit){
+      lit=true;cake.classList.add('lit');
+      sub.textContent='Type your wish, then blow out the candles 🌟';btn.textContent='Make my wish & blow 💨';document.getElementById('wishBox').style.display='block';
+    }else if(cake.classList.contains('lit')){
+      cake.classList.remove('lit');app.classList.add('on');
+      var w=document.getElementById('wish').value.trim();
+      document.getElementById('wishBox').style.display='none';
+      document.getElementById('wnote').textContent=w?'Your wish: “'+w+'” 🙏 I’m praying for it too.':'';
+      sub.textContent='Your wish is on its way to God’s ears 🙏';
+      btn.style.display='none';show(0);confetti();
+    }
+  }
+  btn.addEventListener('click',act);
+  cake.addEventListener('click',act);
+  cake.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();act()}});
+  var env=document.getElementById('env');
+  function openLetter(){
+    if(env.classList.contains('open'))return;
+    env.classList.add('open');document.getElementById('envhint').style.display='none';
+    setTimeout(function(){var l=document.getElementById('letter');l.classList.add('show');l.scrollIntoView({behavior:'smooth',block:'center'});confetti()},600);
+  }
+  env.addEventListener('click',openLetter);
+  env.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
+  document.getElementById('next').addEventListener('click',function(){show((i+1)%V.length);confetti()});
+})();
+</script>
+</body>
+</html>
